@@ -4,7 +4,7 @@ import { loginPage } from "../models/login";
 
 describe('Cypress', () => {
 
-  it.only('Round 1: Element Interaction', () => {
+  it('Round 1: Element Interaction', () => {
 
     cy.visit('https://demo.applitools.com/')
 
@@ -13,7 +13,7 @@ describe('Cypress', () => {
     cy.get('#log-in').click()
 
     cy.contains('.element-header', 'Financial Overview')
-      
+
   });
 
   it('Round 2: Inline Frames', () => {
@@ -23,7 +23,7 @@ describe('Cypress', () => {
     cy.iframe('#the-kitchen-table')
       .find('#fruits-vegetables')
       .should('be.visible')
-      
+
   });
 
   it('Round 3: Waiting', () => {
@@ -32,7 +32,7 @@ describe('Cypress', () => {
 
     cy.get('#searchBar').type('testing')
     cy.get('li:visible').should('have.length', 1)
-      
+
   });
 
   it('Round 4: Accept Alerts', () => {
@@ -43,18 +43,18 @@ describe('Cypress', () => {
     cy.on('window:alert', (alert) => {
       expect(alert).to.eq('Airfryers can make anything!')
     })
-      
+
   });
 
   it('Round 4: Dismiss Alerts', () => {
 
     const dismiss = () => false
-    
+
     cy.visit('https://kitchen.applitools.com/ingredients/alert')
 
     cy.get('#confirm-button').click()
     cy.on('window:confirm', dismiss)
-      
+
   });
 
   it('Round 4: Answer Prompts', () => {
@@ -67,13 +67,13 @@ describe('Cypress', () => {
     })
 
     cy.get('#prompt-button').click()
-      
+
   });
 
   it('Round 5: Navigation to New Windows', () => {
 
     cy.visit('https://kitchen.applitools.com/ingredients/links')
-    
+
     cy.get('#button-the-kitchen-table')
       .invoke('removeAttr', 'target')
       .click()
@@ -82,7 +82,7 @@ describe('Cypress', () => {
       .should('eq', '/ingredients/table')
 
     cy.get('#fruits-vegetables:visible').should('have.length', 1)
-      
+
   });
 
   it('Round 6: API Requests', () => {
@@ -93,7 +93,7 @@ describe('Cypress', () => {
         expect(body.data).to.have.length.greaterThan(0)
         expect(duration).to.be.greaterThan(0)
       })
-      
+
   });
 
   it('Round 7: Page Objects', () => {

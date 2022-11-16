@@ -3,12 +3,17 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "open": "playwright open",
+    "postinstall": "playwright install",
+    "report": "playwright show-report",
+    "run": "playwright test"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@playwright/test": "^1.22.0",
-    "@types/node": "^17.0.33"
+    "@playwright/test": "^1.27.1",
+    "@types/node": "^18.11.9"
   }
 }
