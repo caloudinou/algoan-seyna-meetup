@@ -1,0 +1,199 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: zsh
+
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /Users/naji/www/algoan-seyna-meetup/playwright
+
+  # Export additional ENV variables
+  env:
+    recording: true
+
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 105
+
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 24
+
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: -1
+
+  # Quality
+  # 1 - 100
+  quality: 100
+
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "FiraCode Nerd Font"
+
+  # The size of the font
+  fontSize: 14
+
+  # The height of lines
+  lineHeight: 1
+
+  # The spacing between letters
+  letterSpacing: 0
+
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+
+# Records, feel free to edit them
+records:
+  - delay: 1173
+    content: "\e[1m\e[3m%\e[23m\e[1m\e[0m                                                                                                        \r \r"
+  - delay: 46
+    content: "\ek..up/playwright\e\\"
+  - delay: 35
+    content: "\r\e[0m\e[23m\e[24m\e[J\r\n\e[1;33mnaji\e[0m in \e[1;36m☸ \e[0m\e[1;36mpreprod\e[0m in \e[1;36malgoan-seyna-meetup/playwright\e[0m on \e[1;35m \e[0m\e[1;35mmain\e[0m \e[1;31m[\e[0m\e[1;31m!\e[0m\e[1;31m?\e[0m\e[1;31m]\e[0m is \e[1;38;5;208m\U0001F4E6 \e[0m\e[1;38;5;208mv1.0.0\e[0m via \e[1;32m \e[0m\e[1;32mv16.16.0\e[0m\e[1;32m \e[0m\r\n\e[1;32m❯\e[0m \e[K\e[?1h\e=\e[?2004h"
+  - delay: 381
+    content: "\e[4mn\e[24m\b\e[4mn\e[24m\e[90mpm run test\e[39m\e[11D"
+  - delay: 143
+    content: "\b\e[24m\e[1m\e[31mn\e[1m\e[31mp\e[0m\e[39m"
+  - delay: 142
+    content: "\b\b\e[0m\e[32mn\e[0m\e[32mp\e[32mm\e[39m"
+  - delay: 260
+    content: "\e[39m \e[39mr\e[39mu\e[39mn\e[39m \e[39m\e[4mt\e[39m\e[4me\e[39m\e[4ms\e[39m\e[4mt\e[24m"
+  - delay: 259
+    content: "\e[?1l\e>\e[?2004l\b\b\b\b\e[24mt\e[24me\e[24ms\e[24mt\r\r\n\eknpm\e\\"
+  - delay: 219
+    content: "\r\n> playwright@1.0.0 test\r\n> playwright test\r\n\r\n"
+  - delay: 267
+    content: "\r\nRunning 27 tests using 3 workers\r\n\r\n"
+  - delay: 244
+    content: "\e[1A\e[2K[1/27] [firefox] › matchup.spec.ts:6:3 › Playwright › Round 1: Element Interaction\r\n"
+  - delay: 6
+    content: "\e[1A\e[2K[2/27] [chromium] › matchup.spec.ts:6:3 › Playwright › Round 1: Element Interaction\r\n"
+  - delay: 17
+    content: "\e[1A\e[2K[3/27] [webkit] › matchup.spec.ts:6:3 › Playwright › Round 1: Element Interaction\r\n"
+  - delay: 1133
+    content: "\e[1A\e[2K[4/27] [webkit] › matchup.spec.ts:16:3 › Playwright › Round 2: Inline Frames\r\n"
+  - delay: 26
+    content: "\e[1A\e[2K[5/27] [chromium] › matchup.spec.ts:16:3 › Playwright › Round 2: Inline Frames\r\n"
+  - delay: 883
+    content: "\e[1A\e[2K[6/27] [chromium] › matchup.spec.ts:25:3 › Playwright › Round 3: Waiting\r\n"
+  - delay: 63
+    content: "\e[1A\e[2K[7/27] [firefox] › matchup.spec.ts:16:3 › Playwright › Round 2: Inline Frames\r\n"
+  - delay: 335
+    content: "\e[1A\e[2K[8/27] [webkit] › matchup.spec.ts:25:3 › Playwright › Round 3: Waiting\r\n"
+  - delay: 420
+    content: "\e[1A\e[2K[9/27] [chromium] › matchup.spec.ts:31:3 › Playwright › Round 4: Accept Alerts\r\n"
+  - delay: 291
+    content: "\e[1A\e[2K[10/27] [chromium] › matchup.spec.ts:41:3 › Playwright › Round 4: Dismiss Alerts\r\n"
+  - delay: 263
+    content: "\e[1A\e[2K[11/27] [firefox] › matchup.spec.ts:25:3 › Playwright › Round 3: Waiting\r\n"
+  - delay: 103
+    content: "\e[1A\e[2K[12/27] [chromium] › matchup.spec.ts:47:3 › Playwright › Round 4: Answer Prompts\r\n"
+  - delay: 619
+    content: "\e[1A\e[2K[13/27] [webkit] › matchup.spec.ts:31:3 › Playwright › Round 4: Accept Alerts\r\n"
+  - delay: 32
+    content: "\e[1A\e[2K[14/27] [chromium] › matchup.spec.ts:53:3 › Playwright › Round 5: Navigation to New Windows\r\n"
+  - delay: 119
+    content: "\e[1A\e[2K[15/27] [firefox] › matchup.spec.ts:31:3 › Playwright › Round 4: Accept Alerts\r\n"
+  - delay: 234
+    content: "\e[1A\e[2K[16/27] [webkit] › matchup.spec.ts:41:3 › Playwright › Round 4: Dismiss Alerts\r\n"
+  - delay: 149
+    content: "\e[1A\e[2K[17/27] [chromium] › matchup.spec.ts:66:3 › Playwright › Round 6: API Requests\r\n"
+  - delay: 61
+    content: "\e[1A\e[2K[18/27] [firefox] › matchup.spec.ts:41:3 › Playwright › Round 4: Dismiss Alerts\r\n"
+  - delay: 170
+    content: "\e[1A\e[2K[19/27] [webkit] › matchup.spec.ts:47:3 › Playwright › Round 4: Answer Prompts\r\n"
+  - delay: 89
+    content: "\e[1A\e[2K[20/27] [chromium] › matchup.spec.ts:76:3 › Playwright › Round 7: Page Objects\r\n"
+  - delay: 166
+    content: "\e[1A\e[2K[21/27] [firefox] › matchup.spec.ts:47:3 › Playwright › Round 4: Answer Prompts\r\n"
+  - delay: 148
+    content: "\e[1A\e[2K[22/27] [webkit] › matchup.spec.ts:53:3 › Playwright › Round 5: Navigation to New Windows\r\n"
+  - delay: 330
+    content: "\e[1A\e[2K[23/27] [firefox] › matchup.spec.ts:53:3 › Playwright › Round 5: Navigation to New Windows\r\n"
+  - delay: 390
+    content: "\e[1A\e[2K[24/27] [webkit] › matchup.spec.ts:66:3 › Playwright › Round 6: API Requests\r\n"
+  - delay: 189
+    content: "\e[1A\e[2K[25/27] [webkit] › matchup.spec.ts:76:3 › Playwright › Round 7: Page Objects\r\n"
+  - delay: 70
+    content: "\e[1A\e[2K[26/27] [firefox] › matchup.spec.ts:66:3 › Playwright › Round 6: API Requests\r\n"
+  - delay: 179
+    content: "\e[1A\e[2K[27/27] [firefox] › matchup.spec.ts:76:3 › Playwright › Round 7: Page Objects\r\n"
+  - delay: 735
+    content: "\e[1A\e[2K\r\n\e[32m  27 passed\e[39m\e[2m (7s)\e[22m\r\n"
+  - delay: 19
+    content: "\r\nTo open last HTML report run:\r\n\e[36m\e[39m\r\n\e[36m  npx playwright show-report\e[39m\r\n\e[36m\e[39m\r\n"
+  - delay: 8
+    content: "\e[1m\e[3m%\e[23m\e[1m\e[0m                                                                                                        \r \r"
+  - delay: 44
+    content: "\ek..up/playwright\e\\"
+  - delay: 29
+    content: "\r\e[0m\e[23m\e[24m\e[J\r\n\e[1;33mnaji\e[0m in \e[1;36m☸ \e[0m\e[1;36mpreprod\e[0m in \e[1;36malgoan-seyna-meetup/playwright\e[0m on \e[1;35m \e[0m\e[1;35mmain\e[0m \e[1;31m[\e[0m\e[1;31m!\e[0m\e[1;31m?\e[0m\e[1;31m]\e[0m is \e[1;38;5;208m\U0001F4E6 \e[0m\e[1;38;5;208mv1.0.0\e[0m via \e[1;32m \e[0m\e[1;32mv16.16.0\e[0m\e[1;32m \e[0mtook \e[1;33m8s\e[0m \r\n\e[1;32m❯\e[0m \e[K\e[?1h\e=\e[?2004h"
+  - delay: 1942
+    content: "\e[?2004l\r\r\n"

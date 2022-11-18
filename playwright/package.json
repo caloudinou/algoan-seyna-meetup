@@ -7,7 +7,8 @@
     "open": "playwright open",
     "postinstall": "playwright install",
     "report": "playwright show-report",
-    "run": "playwright test"
+    "run": "playwright test",
+    "test": "playwright test"
   },
   "keywords": [],
   "author": "",
